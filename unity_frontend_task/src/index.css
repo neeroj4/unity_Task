@@ -1,0 +1,9 @@
+
+ @font-face {
+  font-family: imported;
+  src: url('./font//EM-TT.Supermolot/OTF/TT\ Supermolot\ Bold.otf');
+ }
+body {
+  font-family:imported ;
+  margin: 0;
+}

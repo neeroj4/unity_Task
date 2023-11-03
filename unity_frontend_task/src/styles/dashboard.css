@@ -1,0 +1,857 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dashbaord-body {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background: -webkit-linear-gradient(left top, #212A3C, #0C0D0E, #212A3C);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #212A3C, #0C0D0E, #212A3C);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #212A3C, #0C0D0E, #212A3C);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #212A3C, #0C0D0E, #212A3C);
+    padding: 0 0 2rem 0;
+    /* Standard syntax (must be last) */
+}
+
+.dashboard-appbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+/* appbar css open ***/
+.appbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffff;
+    padding: 1rem;
+    width: 80%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+.appbar-ul-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.xmark {
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .appbar-ul-2 {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+
+    .appbar-col-2 {
+        display: flex;
+        justify-content: flex-end;
+        width: 30%;
+
+    }
+
+    .logo-img {
+        width: 100%;
+    }
+
+    .tem-row {
+        display: flex;
+        flex-direction: row;
+        width: 100% !important;
+        margin: 2rem 0 2rem 0;
+        justify-content: space-evenly;
+    }
+
+    .appbar-ul {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        height: 30vh;
+        right: 0;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        padding: 2rem 0 2rem 0;
+        z-index: 4;
+        background: -webkit-linear-gradient(left top, #212A3C, #0C0D0E, #212A3C);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #212A3C, #0C0D0E, #212A3C);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #212A3C, #0C0D0E, #212A3C);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right, #212A3C, #0C0D0E, #212A3C);
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .home-h1 {
+        font-size: 1.55rem !important;
+        text-transform: capitalize;
+    }
+
+    .home-h2 {
+        font-size: 1.25rem !important;
+        margin: 0 0 0.6rem 0;
+        text-transform: capitalize;
+    }
+
+    .home-h3 {
+        display: flex;
+        align-items: center;
+        color: #7C7F83;
+        margin: 0.8rem 0 0 0;
+        font-size: 1rem;
+    }
+
+    .feature-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .feature-img {
+        width: 60% !important;
+        margin: 3rem 0 0 0;
+
+    }
+
+    .logo-img {
+        width: 24% !important;
+    }
+
+    .logo-ul {
+        display: grid !important;
+        width: 80% !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-row-gap: 2rem !important;
+
+
+    }
+
+    .feature-body {
+        width: 100%;
+        height: 100%;
+        padding: 0 0 2rem 0;
+        background: -webkit-linear-gradient(right top, #212A3C, #0C0D0E, #212A3C);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom left, #212A3C, #0C0D0E, #212A3C);
+
+
+    }
+
+    .feature-col-1 {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100% !important;
+    }
+
+    .feature-col-2 {
+        width: 60% !important;
+        color: #ffff;
+    }
+    .img-row-2 {
+        position: absolute;
+        bottom: -2%;
+        padding: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        right: 25% !important;
+        color: #ffff;
+        background: url('https://img.freepik.com/premium-vector/black-gradient-color-wallpaper-background-template-dark-paper-texture-vector-background_293525-35.jpg?w=360');
+        width: 14% !important;
+        border-radius: 0.5rem;
+        height:auto;
+        z-index: 3;
+        mix-blend-mode: exclusion;
+    }
+    .img-h{
+        font-size: 1rem !important;
+        color: #ffff;
+        margin: 0;
+    }
+    .img-p{
+        font-size: 0.7rem !important;
+        color: #ffff;
+    }
+    .carousel-image {
+        width: 50% !important;
+        height: 40vh;
+    }
+
+    .po-img {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .porch-card-row-2 {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 2rem !important;
+        justify-items: center;
+        grid-column-gap: 2rem !important;
+    }
+
+    .fe-h {
+        text-transform: capitalize;
+        font-size: 1.25rem !important;
+        color: #ffff;
+    }
+
+    .about-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        color: #ffff
+    }
+
+    .xmark {
+        display: flex;
+        position: absolute;
+        right: 5%;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .porch-card-row {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        margin: 2rem 0 0 0;
+        grid-row-gap: 2rem !important;
+        width: auto !important;
+    }
+
+
+
+
+}
+
+.appbar-col-1 {
+    display: flex;
+    width: 60%;
+
+}
+
+.h-li-2 {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.h-img-2 {
+    width: 2rem;
+    mix-blend-mode: lighten;
+}
+
+.appbar-col-2 {
+    display: flex;
+    width: 40%;
+
+}
+
+.appbar-ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+.appabr-li {
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+/***  home css open***/
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.head-row {
+    display: flex;
+    color: #ffff;
+    padding: 1rem 0 0 0;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-h1 {
+    font-size: 2.25rem;
+    text-transform: capitalize;
+}
+
+.home-h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.6rem 0;
+    text-transform: capitalize;
+}
+
+.home-h3 {
+    display: flex;
+    align-items: center;
+    color: #7C7F83;
+    margin: 0.8rem 0 0 0;
+    font-size: 1rem;
+}
+
+/***  carousel image carousel **/
+.image-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 30%;
+    height: 40vh;
+    transition: transform 0.5s ease-in-out;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-image.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Class to slide out an image to the left */
+.carousel-image.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 40vh;
+    margin: 2rem 0 0 0;
+}
+
+.prev-img,
+.next-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-img {
+    left: 0;
+    width: 1.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.next-img {
+    right: 0;
+    width: 1.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+
+.dots-container {
+    display: flex;
+}
+
+.tem-row {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 2rem 0 2rem 0;
+    justify-content: space-evenly;
+}
+
+.tem-col-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tem-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.temp-h {
+    color: #ffff;
+    font-size: 1.25rem;
+}
+
+.temp-p {
+    color: #6C6E73;
+    font-size: 0.813rem;
+}
+
+.milage-p {
+    font-size: 0.875rem;
+    margin: 0 0 0.4rem 0;
+    color: #919292;
+}
+
+.start-img {
+    width: 8rem;
+}
+
+/**   feature body ***/
+.feature-body {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 2rem 0;
+    background: -webkit-linear-gradient(right top, #212A3C, #0C0D0E, #212A3C);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, #212A3C, #0C0D0E, #212A3C);
+
+}
+
+.feature-row {
+    display: flex;
+
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    align-items: center;
+    width: 100%;
+}
+
+.feature-col-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img-row {
+    position: absolute;
+    bottom: -2%;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    right: 20%;
+    color: #ffff;
+    background: url('https://img.freepik.com/premium-vector/black-gradient-color-wallpaper-background-template-dark-paper-texture-vector-background_293525-35.jpg?w=360');
+    width: 25%;
+    border-radius: 0.5rem;
+    height:auto;
+    z-index: 3;
+    mix-blend-mode: exclusion;
+}
+.more-faeture-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+.img-row-2 {
+    position: absolute;
+    bottom: -2%;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    right: 38%;
+    top: 38%;
+    color: #ffff;
+    background: url('https://img.freepik.com/premium-vector/black-gradient-color-wallpaper-background-template-dark-paper-texture-vector-background_293525-35.jpg?w=360');
+    width: 7vw;
+    padding: 0.4vw;
+    border-radius: 0.5rem;
+    height:12vh;
+    z-index: 3;
+    mix-blend-mode: exclusion;
+}
+.img-h{
+    font-size: 1.25rem;
+    color: #ffff;
+    margin: 0;
+}
+.img-p{
+    font-size: 0.825rem;
+    color: #ffff;
+}
+
+.feature-img {
+    width: 60%;
+    transition: transform 0.3s;
+
+}
+
+
+.feature-img:hover {
+    transform: scale(1.1);
+    /* Adjust the scaling factor as desired */
+}
+
+.feature-col-2 {
+    width: 25%;
+    color: #ffff;
+}
+
+.fe-h {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #ffff;
+}
+
+.fe-p {
+    color: #B7BBC1;
+    margin: 2rem 0 2.4rem 0;
+    font-size: 0.875rem;
+}
+
+.f-btn {
+    background-color: #4177DC;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    width: 8rem;
+    height: 3rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.f-btn:hover {
+    background-color: #3066C5;
+    transform: scale(1.05);
+    width: 8rem;
+    height: 3rem;
+
+
+}
+
+/***   porsche brand css open**/
+.porsche-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+}
+
+.porch-card-row {
+    display: grid;
+    margin: 2rem 0 0 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    width: 60%;
+}
+
+.porche-card {
+    background: -webkit-linear-gradient(left top, #212A3C, #0C0D0E, #212A3C);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #212A3C, #0C0D0E, #212A3C);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #212A3C, #0C0D0E, #212A3C);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #212A3C, #0C0D0E, #212A3C);
+    width: 15rem;
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
+    height: 100%;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem #0C0D0E;
+    color: #ffff;
+    transition: transform 0.3s;
+
+}
+
+.porche-card:hover {
+    transform: scale(1.1);
+}
+
+.porche-img {
+    position: absolute;
+    right: 0;
+    width: 3.3rem;
+    bottom: 0;
+}
+
+.posc-h {
+    font-size: 1.25rem;
+}
+
+.posc-p {
+    font-size: 0.875rem;
+    color: #919292;
+}
+
+.porch-img {
+    transform: scaleX(-1);
+    width: 12rem;
+    margin: 0 0 0 1rem;
+}
+
+.porch-s-row {
+    display: grid;
+    width: 80%;
+    margin: 1rem 0 0 0;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.porch-s {
+    font-size: 0.8rem;
+}
+
+.porsch-i {
+    font-size: 0.8rem;
+    margin: 0 0.3rem 0 0;
+}
+
+.porch-p {
+    font-size: 1.25rem;
+}
+
+/**  more feature css open **/
+.po-img {
+    width: 60%;
+    height: 100%;
+}
+
+.img-ul {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    color: white;
+    list-style-type: none;
+}
+
+.img-li {
+    color: #ffff;
+    width: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.lux-img {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.porch-card-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+}
+
+
+/***   special offer css open***/
+.special-offer-body {
+    display: flex;
+    width: 100%;
+    background: -webkit-linear-gradient(right top, #212A3C, #0C0D0E, #212A3C);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, #212A3C, #0C0D0E, #212A3C);
+
+}
+
+.porsche-row {
+    display: flex;
+    width: 100%;
+    color: #ffff;
+
+}
+
+/**   logo body css open**/
+.logo-body {
+    display: flex;
+    justify-content: center;
+    background-color: #0C0D0E;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+.logo-ul {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+
+.logo-img {
+    width: 100%;
+}
+
+/***   about body css open****/
+.about-body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #212A3C, #0C0D0E, #212A3C);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, #0C0D0E, #0C0D0E, #212A3C);
+    background: linear-gradient(to bottom right, #0C0D0E, #0C0D0E, #212A3C);
+
+
+}
+
+.about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.col-p {
+    margin: 1vw 0 0 0;
+    color: #919292;
+    font-size: 0.825rem;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    color: #ffff;
+}
+
+.about-h-ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+
+.h-li {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.h-img {
+    width: 2.7rem;
+}
+
+.h-d-li {
+    font-size: 0.875rem;
+    margin: 1rem 0 0 0;
+    color: #919292;
+}
+
+.about-ul {
+    list-style-type: none;
+}
+
+.about-li-h {
+    font-size: 1rem;
+}
+
+.about-li {
+    font-size: 0.875rem;
+    cursor: pointer;
+    margin: 0.5rem 0.3rem 0 0;
+    color: #919292;
+}
+
+.about-ul-icon {
+    list-style-type: none;
+}
+
+.about-ul-row {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
